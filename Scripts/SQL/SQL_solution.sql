@@ -33,4 +33,5 @@ select r.name, sr.name, a.name
 from region r
 -- Left join was used in order to return only match from region stable
 left join sales_reps sr on r.id = sr.region_id
-left join accounts a on sr.id = a.sales_rep_id;
+left join accounts a on sr.id = a.sales_rep_id
+order by a.name asc;
