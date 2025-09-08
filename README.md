@@ -30,7 +30,7 @@ STEP 2: Exported the source URL into an environment variable.
 
 STEP 3: Created an [extract.sh](Scripts/Bash/extract.sh) file that contains the bash script that downloads the source data into the `raw` folder from the url.
 
-STEP 4: I opened the csv file using `nano` command to manually rename the column Variable_code into variable_code, then created a ['Scripts/Bash/transformed.sh'](Scripts/Bash/transformed.sh) script 
+STEP 4: I opened the csv file using `nano` command to manually rename the column Variable_code into variable_code, then created a [transformed.sh](Scripts/Bash/transformed.sh) script 
 that will select a specified columns from our source csv file which includes, year, Value, Units, variable_code into a new file name, 2023_year_finance.csv and store it in a folder 
 named `Transformed`. The script also has a logging message that confirms the loading of the file into the `Transformed` folder.
 
@@ -55,7 +55,7 @@ load their data into my Postgres database, `posey`.
 > After that, I log in to my database using `psql -U posey_user -d posey -h localhost -W` to create tables before loading my data inside the database.
 
 ### TASK 5: Posey analysis question solutions
-The following question's solution was saved in [SQL_solution.sql](Scripts/Bash/SQL_solution.sql) file:
+The following question's solution was saved in [SQL_solution.sql](Scripts/SQL/SQL_solution.sql) file:
 
 - Find a list of order IDs where either gloss_qty or poster_qty is greater than 4000. Only include the id field in the resulting table.
 
